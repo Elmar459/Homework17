@@ -2,7 +2,7 @@ public with sharing class asyncap {
     
 // Task 1. Future Method
     @future   
-    public static void updatelistacc() {
+    public static void updatelistacc(List<Id> accId) {
 
         List<Account> acclist = new List<Account>([SELECT Id, Name, Description FROM Account]);
         for(Account acc : acclist) {
